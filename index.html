@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Nawilni</title>
+<meta name="description" content="Privacy policy of Nawilni, the app that sends files directly between phones over Wi-Fi. The developer collects no data.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbfdf9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111412" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%230b6e4f'/%3E%3Cpath fill='%23fff' d='M200 162 265 237H223V350H175V237H133ZM313 350 247 275H289V162H337V275H379Z'/%3E%3C/svg%3E">
+<!--
+  Privacy policy of Nawilni, for the Google Play and App Store listings.
+
+  This file is complete on its own: no other file, no font, no script from
+  another site. Put it on any web host and give the stores its address.
+
+  Both languages are in this file. With JavaScript the page shows one of
+  them; without it, both, English first. A link that ends in #ar opens the
+  Arabic text, one that ends in #en the English text.
+
+  When the app changes what it stores or sends, change BOTH texts and BOTH
+  "Last updated" dates. docs/09-release.md §6 says what must stay true.
+-->
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfdf9;
+    --text: #191c1a;
+    --muted: #404943;
+    --faint: #5c665f;
+    --line: #d5dfd7;
+    --accent: #0b6e4f;
+    --on-accent: #ffffff;
+    --tint: #e6f4ec;
+    --tint-line: #b9dfca;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111412;
+      --text: #e1e3df;
+      --muted: #bfc9c1;
+      --faint: #98a39b;
+      --line: #343c37;
+      --accent: #87d6b4;
+      --on-accent: #003828;
+      --tint: #15261e;
+      --tint-line: #25493a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif;
+    overflow-wrap: break-word;
+  }
+  [lang="ar"] {
+    font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans Arabic", "Geeza Pro", Tahoma, Arial, sans-serif;
+    line-height: 1.95;
+  }
+
+  .wrap { max-width: 46rem; margin-inline: auto; padding: 0 20px 80px; }
+
+  /* Top bar: the app, and the language switch */
+  .bar {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding-block: 18px;
+    border-bottom: 1px solid var(--line);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 650; font-size: 1.05rem; line-height: 1.3; }
+  .brand svg { width: 40px; height: 40px; border-radius: 10px; flex: none; }
+  .brand small { display: block; color: var(--faint); font-weight: 400; font-size: .85rem; line-height: 1.5; }
+  .langs { display: flex; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; flex: none; }
+  .langs a {
+    padding: 5px 13px; border-radius: 999px;
+    color: var(--muted); text-decoration: none; font-size: .9rem; line-height: 1.5;
+  }
+  .langs a:hover { color: var(--text); }
+  .langs a[aria-current="true"] { background: var(--accent); color: var(--on-accent); }
+
+  /* The policy */
+  article { scroll-margin-top: 96px; }   /* a link to #en or #ar keeps the top bar in view */
+  article:not([hidden]) + article { margin-top: 72px; border-top: 1px solid var(--line); }   /* both shown: no script */
+  .title { padding-block: 44px 4px; }
+  h1 {
+    margin: 0 0 8px;
+    font-size: clamp(1.9rem, 7vw, 2.6rem); line-height: 1.15; letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  [lang="ar"] h1 { line-height: 1.5; letter-spacing: 0; }
+  .updated { margin: 0; color: var(--faint); font-size: .95rem; }
+
+  .short {
+    margin-block: 28px 0; padding: 20px 22px;
+    background: var(--tint); border: 1px solid var(--tint-line); border-radius: 16px;
+  }
+  .short h2 { margin: 0 0 8px; font-size: 1rem; color: var(--accent); }
+  .short ul { margin: 0; }
+  .short li:last-child { margin-bottom: 0; }
+
+  h2 { margin: 48px 0 12px; font-size: 1.3rem; line-height: 1.35; text-wrap: balance; }
+  [lang="ar"] h2 { line-height: 1.6; }
+  h3 { margin: 0 0 2px; font-size: 1rem; line-height: 1.5; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-inline-start: 1.3em; }
+  li { margin-bottom: 8px; }
+  li::marker { color: var(--accent); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  b { font-weight: 650; }
+
+  /* A word that is on a button or a screen of the app */
+  .ui { font-weight: 650; white-space: nowrap; }
+
+  .perms { list-style: none; margin: 16px 0 14px; padding: 0; border: 1px solid var(--line); border-radius: 14px; }
+  .perms li { margin: 0; padding: 14px 18px; border-top: 1px solid var(--line); }
+  .perms li:first-child { border-top: 0; }
+  .perms p { margin: 0; color: var(--muted); }
+  .tag {
+    display: inline-block; margin-inline-start: 6px; padding: 0 8px;
+    border: 1px solid var(--line); border-radius: 999px;
+    color: var(--faint); font-size: .72rem; font-weight: 600; line-height: 1.7; vertical-align: 1px;
+  }
+
+  .contact { padding: 18px 22px; border: 1px solid var(--line); border-radius: 14px; }
+  .contact p { margin: 0; }
+
+  @media print {
+    .langs { display: none; }
+    body { font-size: 11pt; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="bar">
+    <div class="brand">
+      <svg viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" fill="#0b6e4f"/><path fill="#fff" d="M200 162 265 237H223V350H175V237H133ZM313 350 247 275H289V162H337V275H379Z"/></svg>
+      <span>Nawilni <small lang="ar">ناولني</small></span>
+    </div>
+    <nav class="langs" aria-label="Language">
+      <a href="#en" data-lang="en" lang="en" hreflang="en">English</a>
+      <a href="#ar" data-lang="ar" lang="ar" hreflang="ar">العربية</a>
+    </nav>
+  </div>
+
+  <!-- ================================ English ================================ -->
+  <article id="en" lang="en" dir="ltr">
+    <header class="title">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Nawilni · Last updated: 21 November 2026</p>
+    </header>
+
+    <div class="short">
+      <h2>In short</h2>
+      <ul>
+        <li>Nawilni sends files directly from one device to another over your local network. There is no server.</li>
+        <li>The developer collects no data. The app has no account, no ads, no analytics and no crash reporting.</li>
+        <li>Your transfer history and your settings stay on your device, and you can delete them.</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>1. About this policy</h2>
+      <p>Nawilni (“the app”) is a file transfer app for Android, iPhone and iPad. It is made by Youssef Agagg (“the developer”).</p>
+      <p>This policy explains what the app does with your data. It applies to every version of the app on Google Play and on the App Store. What it says about iPhone is also true for iPad.</p>
+    </section>
+
+    <section>
+      <h2>2. What the developer collects</h2>
+      <p><b>Nothing.</b></p>
+      <ul>
+        <li>The app has no account and no sign-up.</li>
+        <li>The app has no advertising, no analytics and no crash reporting.</li>
+        <li>The app contains no advertising software and no tracking software from other companies.</li>
+        <li>The app does not contact the developer or any other company over the internet. It connects only to the device that you send to or receive from, over a Wi-Fi network or a hotspot that the two devices share.</li>
+      </ul>
+      <p>The developer receives no data from the app. So the developer cannot see, sell or share your files, or any information about you.</p>
+    </section>
+
+    <section>
+      <h2>3. What is stored on your device</h2>
+      <p>The app keeps the following in its own storage on your device. None of it is sent to the developer.</p>
+      <ul>
+        <li><b>Transfer history.</b> For each transfer that you send or receive: its date, the other device, and for each file its name, size, type, date of last change, a fingerprint of its content, and where it is saved on your device. The app uses the fingerprint to continue an interrupted transfer and to recognise a file that you already received.</li>
+        <li><b>Devices you exchanged files with.</b> The name of the device, its random ID, whether it is an Android phone or an iPhone, the ID of its key, and the date of the last connection.</li>
+        <li><b>Settings.</b> The name of your device as other devices see it, and what the app does when a file was already received.</li>
+        <li><b>An installation ID and a device key.</b> A random ID and an encryption key, both created the first time you open the app. They identify this installation to other devices, so that another device cannot pretend to be yours. They are not connected to your name, your phone number, your e-mail address or an advertising ID.</li>
+        <li><b>Received files and incomplete files.</b> Files that you receive are saved in <span class="ui">Download/Nawilni</span> on Android, and in the <span class="ui">Nawilni</span> folder of the Files app on iPhone. When a transfer is interrupted, the part that arrived is kept so that the transfer can continue.</li>
+      </ul>
+      <p>On iPhone, the app sometimes makes a temporary copy of a photo, a video or a shared file in order to send it. It deletes the copy afterwards.</p>
+    </section>
+
+    <section>
+      <h2>4. What the other device receives</h2>
+      <p>A transfer starts only when you choose a device to send to. The receiving device then gets:</p>
+      <ul>
+        <li>the name of your device, its installation ID, whether it is an Android phone or an iPhone, the version of the app, and the public part of your device key;</li>
+        <li>for each file that you offer: its name, size, type, date of last change and fingerprint;</li>
+        <li>the content of the files, after the person on the receiving device taps <span class="ui">Accept</span>. Nothing is saved before that.</li>
+      </ul>
+      <p>When you receive, the sending device gets the same details about your device. It also learns which of the offered files you accepted, which you declined, and which you already have.</p>
+      <p>The person who receives your files can keep, copy and share them. The app cannot take a file back after it was sent.</p>
+    </section>
+
+    <section>
+      <h2>5. What other devices on the same network can see</h2>
+      <ul>
+        <li>While the <span class="ui">Receive</span> screen is open, your device announces itself on the local network so that senders can find it. The announcement contains the name of your device, its installation ID, whether it is an Android phone or an iPhone, and the ID of its key. Every device on the same network can see it. The announcement stops when you leave the <span class="ui">Receive</span> screen and no transfer is in progress.</li>
+        <li>The QR code on the <span class="ui">Receive</span> screen contains the same details, and the address of your device on the local network. Anyone who can see the screen can scan it.</li>
+        <li>Every connection between two devices is encrypted. Someone who watches the network cannot read the file names, the content of the files or the device names in a transfer. They can see that two devices exchange data, and about how much.</li>
+      </ul>
+      <p>You can change the name of your device in <span class="ui">Settings</span>.</p>
+    </section>
+
+    <section>
+      <h2>6. Permissions</h2>
+      <p>The app asks for a permission only for the feature that needs it. If you say no, the rest of the app still works.</p>
+      <ul class="perms">
+        <li>
+          <h3>Local network <span class="tag">iPhone</span></h3>
+          <p>To find the other device and to connect to it.</p>
+        </li>
+        <li>
+          <h3>Camera <span class="tag">Android</span><span class="tag">iPhone</span></h3>
+          <p>Only to scan the QR code on the other device. The camera image is read on your device to find the code. It is not saved and not sent anywhere.</p>
+        </li>
+        <li>
+          <h3>Photos, add only <span class="tag">iPhone</span></h3>
+          <p>Only to save a received photo or video to your library when you tap <span class="ui">Save to Photos</span>. The app cannot read your library.</p>
+        </li>
+        <li>
+          <h3>Notifications <span class="tag">Android</span></h3>
+          <p>To show the progress of a transfer while it runs, also when the screen is off.</p>
+        </li>
+        <li>
+          <h3>Nearby devices, or Location <span class="tag">Android</span></h3>
+          <p>Android requires this permission before an app can start a hotspot: “Nearby devices” on Android 13 and later, “Location” on Android 8 to 12. The app uses it only for <span class="ui">Make this phone a hotspot</span>. The app does not read or store your location.</p>
+        </li>
+        <li>
+          <h3>Storage <span class="tag">Android 8 – 10</span></h3>
+          <p>To save received files in <span class="ui">Download/Nawilni</span>. Later versions of Android do not need this permission.</p>
+        </li>
+        <li>
+          <h3>Network access <span class="tag">Android</span></h3>
+          <p>To connect to the other device. Android gives this permission without a question.</p>
+        </li>
+      </ul>
+      <p>The app can read only the files that you pick in it, or that you share to it from another app.</p>
+    </section>
+
+    <section>
+      <h2>7. Security</h2>
+      <ul>
+        <li>Every connection is encrypted, and every part of a file is checked when it arrives.</li>
+        <li>A device that you sent to before, or whose QR code you scanned, must prove that it holds the key that the app expects. If it cannot, the app stops and tells you.</li>
+        <li>The first time you send to a device that you picked from the list of nearby phones, the app has no earlier key to compare with. On a network that you do not trust, scan the QR code instead.</li>
+        <li>Your device key is kept in the private storage of the app on Android, and in the Keychain on iPhone.</li>
+      </ul>
+      <p>The encryption uses standard methods. An independent security expert has not reviewed it yet, and no method can promise complete security.</p>
+    </section>
+
+    <section>
+      <h2>8. How long data is kept, and how to delete it</h2>
+      <p>The app keeps the data of section 3 until you delete it. Only incomplete files are removed without you: the app deletes them after 7 days.</p>
+      <ul>
+        <li><b>One transfer.</b> In <span class="ui">History</span>, choose <span class="ui">Remove from history</span>. This removes the transfer, the list of its files and their fingerprints. It does not delete the files that you received.</li>
+        <li><b>Incomplete files.</b> In <span class="ui">Settings</span>, under <span class="ui">Incomplete transfers</span>, choose <span class="ui">Delete them</span>.</li>
+        <li><b>Everything.</b> Delete the app, or on Android clear the storage of the app in the settings of the phone (Apps → Nawilni → Storage). This removes the history, the list of devices, the settings, the installation ID and the device key.</li>
+        <li><b>Received files.</b> They are yours. On Android they stay in <span class="ui">Download/Nawilni</span> after you delete the app, until you delete them yourself. On iPhone they are in the folder of the app, so deleting the app deletes them too. Move the files that you want to keep before you delete the app.</li>
+      </ul>
+      <p>On iPhone, the system may keep the device key in the Keychain after you delete the app. The key stays on your device.</p>
+      <p>The developer has no copy of your data. So there is nothing that the developer can delete for you or send to you.</p>
+    </section>
+
+    <section>
+      <h2>9. Backups</h2>
+      <ul>
+        <li><b>Android.</b> The data of the app is excluded from Android backup, and from the copy that Android makes when you move to a new phone.</li>
+        <li><b>iPhone.</b> If you use iCloud Backup or back up to a computer, the backup contains the history, the settings and the received files of the app, as it does for other apps. Apple handles these backups under its own privacy policy, and the developer cannot reach them. The device key is not moved to another device.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>10. Google Play and the App Store</h2>
+      <p>When you install the app, Google or Apple handles the download under its own privacy policy. If you agreed on your device to share statistics with app developers, the store shows the developer totals such as the number of installs and the number of crashes. These numbers come from Google or Apple, not from the app, and they do not identify you. You can turn this sharing off in the settings of your device.</p>
+    </section>
+
+    <section>
+      <h2>11. Children</h2>
+      <p>The app is not directed at children under 13. It collects no personal data from anyone, of any age.</p>
+    </section>
+
+    <section>
+      <h2>12. Your rights</h2>
+      <p>Privacy laws in many countries give you the right to see, correct and delete the personal data that an organisation holds about you. The developer holds no personal data about you. Everything that the app stores is on your own device, and section 8 explains how to delete it.</p>
+    </section>
+
+    <section>
+      <h2>13. Changes to this policy</h2>
+      <p>When this policy changes, the new text appears on this page with a new date at the top. If a later version of the app collects any data, this policy will say so before that version is released.</p>
+    </section>
+
+    <section>
+      <h2>14. Contact</h2>
+      <div class="contact">
+        <p>Youssef Agagg<br><a href="mailto:youssefagagg@gmail.com">youssefagagg@gmail.com</a></p>
+      </div>
+    </section>
+  </article>
+
+  <!-- ================================ العربية ================================ -->
+  <article id="ar" lang="ar" dir="rtl">
+    <header class="title">
+      <h1>سياسة الخصوصية</h1>
+      <p class="updated">ناولني · آخر تحديث: 21 نوفمبر 2026</p>
+    </header>
+
+    <div class="short">
+      <h2>باختصار</h2>
+      <ul>
+        <li>ناولني يرسل الملفات مباشرة من جهاز إلى جهاز عبر شبكتك المحلية. لا يوجد خادم.</li>
+        <li>المطوّر لا يجمع أي بيانات. التطبيق بلا حساب، بلا إعلانات، بلا تحليلات وبلا تقارير أعطال.</li>
+        <li>سجل النقل والإعدادات يبقيان على جهازك، ويمكنك حذفهما.</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>1. عن هذه السياسة</h2>
+      <p>ناولني (<span lang="en" dir="ltr">Nawilni</span>)، ويُسمّى هنا «التطبيق»، تطبيق لنقل الملفات على أندرويد وآيفون وآيباد. طوّره <span lang="en" dir="ltr">Youssef Agagg</span>، ويُسمّى هنا «المطوّر».</p>
+      <p>تشرح هذه السياسة ما يفعله التطبيق ببياناتك. وتنطبق على كل إصدارات التطبيق على <span lang="en" dir="ltr">Google Play</span> وعلى <span lang="en" dir="ltr">App Store</span>. وما يُقال هنا عن آيفون يصحّ على آيباد أيضاً.</p>
+    </section>
+
+    <section>
+      <h2>2. ما الذي يجمعه المطوّر</h2>
+      <p><b>لا شيء.</b></p>
+      <ul>
+        <li>التطبيق بلا حساب وبلا تسجيل.</li>
+        <li>التطبيق بلا إعلانات، بلا تحليلات وبلا تقارير أعطال.</li>
+        <li>لا يحتوي التطبيق على برامج إعلانات أو برامج تتبّع من شركات أخرى.</li>
+        <li>التطبيق لا يتصل بالمطوّر ولا بأي شركة أخرى عبر الإنترنت. يتصل فقط بالجهاز الذي ترسل إليه أو تستلم منه، عبر شبكة واي فاي أو نقطة اتصال تجمع الجهازين.</li>
+      </ul>
+      <p>المطوّر لا يستلم أي بيانات من التطبيق. لذلك لا يستطيع أن يرى ملفاتك أو يبيعها أو يشاركها، ولا أي معلومات عنك.</p>
+    </section>
+
+    <section>
+      <h2>3. ما الذي يُحفظ على جهازك</h2>
+      <p>يحفظ التطبيق ما يلي في مساحته الخاصة على جهازك. لا يُرسَل شيء منه إلى المطوّر.</p>
+      <ul>
+        <li><b>سجل النقل.</b> لكل عملية إرسال أو استلام: تاريخها، والجهاز الآخر، ولكل ملف: اسمه، وحجمه، ونوعه، وتاريخ آخر تعديل له، وبصمة لمحتواه، ومكان حفظه على جهازك. يستخدم التطبيق البصمة ليُكمل نقلاً انقطع، وليتعرّف على ملف استلمته من قبل.</li>
+        <li><b>الأجهزة التي تبادلت معها الملفات.</b> اسم الجهاز، ومعرّفه العشوائي، ونوعه (أندرويد أو آيفون)، ومعرّف مفتاحه، وتاريخ آخر اتصال به.</li>
+        <li><b>الإعدادات.</b> اسم جهازك كما تراه الأجهزة الأخرى، وما يفعله التطبيق إذا كان الملف مستلَماً من قبل.</li>
+        <li><b>معرّف التثبيت ومفتاح الجهاز.</b> معرّف عشوائي ومفتاح تشفير، يُنشآن عند أول تشغيل للتطبيق. يعرّفان هذا التثبيت للأجهزة الأخرى، حتى لا يستطيع جهاز آخر أن ينتحل صفة جهازك. ولا يرتبطان باسمك، ولا برقم هاتفك، ولا ببريدك الإلكتروني، ولا بأي معرّف إعلاني.</li>
+        <li><b>الملفات المستلمة والملفات غير المكتملة.</b> تُحفظ الملفات التي تستلمها في <span class="ui" lang="en" dir="ltr">Download/Nawilni</span> على أندرويد، وفي مجلد <span class="ui" lang="en" dir="ltr">Nawilni</span> داخل تطبيق «الملفات» على آيفون. وإذا انقطع النقل يبقى الجزء الذي وصل، حتى يمكن إكمال النقل.</li>
+      </ul>
+      <p>على آيفون ينشئ التطبيق أحياناً نسخة مؤقتة من صورة أو فيديو أو ملف مُشارَك حتى يرسله، ثم يحذف هذه النسخة بعد ذلك.</p>
+    </section>
+
+    <section>
+      <h2>4. ما الذي يستلمه الجهاز الآخر</h2>
+      <p>لا يبدأ النقل إلا عندما تختار الجهاز الذي ترسل إليه. عندها يستلم الجهاز المستقبِل:</p>
+      <ul>
+        <li>اسم جهازك، ومعرّف التثبيت، ونوع الجهاز (أندرويد أو آيفون)، وإصدار التطبيق، والجزء العام من مفتاح جهازك؛</li>
+        <li>لكل ملف تعرضه: اسمه، وحجمه، ونوعه، وتاريخ آخر تعديل له، وبصمته؛</li>
+        <li>محتوى الملفات، بعد أن يضغط صاحب الجهاز المستقبِل على <span class="ui" lang="en" dir="ltr">Accept</span>. لا يُحفظ شيء قبل ذلك.</li>
+      </ul>
+      <p>وعندما تستلم أنت، يحصل الجهاز المرسِل على المعلومات نفسها عن جهازك. ويعرف أيضاً أي الملفات المعروضة قبلتَها، وأيها رفضتَها، وأيها موجود عندك من قبل.</p>
+      <p>مَن يستلم ملفاتك يستطيع أن يحتفظ بها وينسخها ويشاركها. ولا يستطيع التطبيق أن يسترجع ملفاً بعد إرساله.</p>
+    </section>
+
+    <section>
+      <h2>5. ما الذي تراه الأجهزة الأخرى على الشبكة نفسها</h2>
+      <ul>
+        <li>ما دامت شاشة <span class="ui" lang="en" dir="ltr">Receive</span> مفتوحة، يعلن جهازك عن نفسه على الشبكة المحلية حتى يجده المرسِلون. يحتوي الإعلان على اسم جهازك، ومعرّف التثبيت، ونوع الجهاز (أندرويد أو آيفون)، ومعرّف مفتاحه. وكل جهاز على الشبكة نفسها يستطيع أن يراه. يتوقف الإعلان عندما تغادر شاشة <span class="ui" lang="en" dir="ltr">Receive</span> ولا يكون هناك نقل جارٍ.</li>
+        <li>رمز <span lang="en" dir="ltr">QR</span> الظاهر على شاشة <span class="ui" lang="en" dir="ltr">Receive</span> يحتوي على المعلومات نفسها، وعلى عنوان جهازك على الشبكة المحلية. وكل من يرى الشاشة يستطيع أن يمسحه.</li>
+        <li>كل اتصال بين جهازين مشفّر. مَن يراقب الشبكة لا يستطيع أن يقرأ أسماء الملفات ولا محتواها ولا أسماء الأجهزة أثناء النقل. لكنه يرى أن جهازين يتبادلان بيانات، ويرى حجمها تقريباً.</li>
+      </ul>
+      <p>يمكنك تغيير اسم جهازك من <span class="ui" lang="en" dir="ltr">Settings</span>.</p>
+    </section>
+
+    <section>
+      <h2>6. الأذونات</h2>
+      <p>يطلب التطبيق الإذن فقط من أجل الميزة التي تحتاج إليه. وإذا رفضت، تبقى بقية التطبيق تعمل.</p>
+      <ul class="perms">
+        <li>
+          <h3>الشبكة المحلية <span class="tag">آيفون</span></h3>
+          <p>لإيجاد الجهاز الآخر والاتصال به.</p>
+        </li>
+        <li>
+          <h3>الكاميرا <span class="tag">أندرويد</span><span class="tag">آيفون</span></h3>
+          <p>فقط لمسح رمز <span lang="en" dir="ltr">QR</span> الظاهر على الجهاز الآخر. تُقرأ صورة الكاميرا على جهازك للعثور على الرمز. لا تُحفظ ولا تُرسَل إلى أي مكان.</p>
+        </li>
+        <li>
+          <h3>الصور، إضافة فقط <span class="tag">آيفون</span></h3>
+          <p>فقط لحفظ صورة أو فيديو استلمته في مكتبتك عندما تضغط <span class="ui" lang="en" dir="ltr">Save to Photos</span>. لا يستطيع التطبيق قراءة مكتبتك.</p>
+        </li>
+        <li>
+          <h3>الإشعارات <span class="tag">أندرويد</span></h3>
+          <p>لإظهار تقدّم النقل أثناء تشغيله، حتى والشاشة مطفأة.</p>
+        </li>
+        <li>
+          <h3>الأجهزة المجاورة، أو الموقع <span class="tag">أندرويد</span></h3>
+          <p>يشترط أندرويد هذا الإذن قبل أن ينشئ أي تطبيق نقطة اتصال: «الأجهزة المجاورة» على أندرويد 13 وما بعده، و«الموقع» على أندرويد 8 إلى 12. يستخدمه التطبيق فقط من أجل <span class="ui" lang="en" dir="ltr">Make this phone a hotspot</span>. التطبيق لا يقرأ موقعك ولا يحفظه.</p>
+        </li>
+        <li>
+          <h3>التخزين <span class="tag">أندرويد 8 – 10</span></h3>
+          <p>لحفظ الملفات المستلمة في <span class="ui" lang="en" dir="ltr">Download/Nawilni</span>. إصدارات أندرويد الأحدث لا تحتاج إلى هذا الإذن.</p>
+        </li>
+        <li>
+          <h3>الوصول إلى الشبكة <span class="tag">أندرويد</span></h3>
+          <p>للاتصال بالجهاز الآخر. يمنح أندرويد هذا الإذن دون سؤال.</p>
+        </li>
+      </ul>
+      <p>لا يستطيع التطبيق أن يقرأ إلا الملفات التي تختارها فيه، أو التي تشاركها معه من تطبيق آخر.</p>
+    </section>
+
+    <section>
+      <h2>7. الأمان</h2>
+      <ul>
+        <li>كل اتصال مشفّر، وكل جزء من الملف يُفحص عند وصوله.</li>
+        <li>الجهاز الذي أرسلت إليه من قبل، أو الذي مسحت رمز <span lang="en" dir="ltr">QR</span> الخاص به، يجب أن يثبت أنه يملك المفتاح الذي ينتظره التطبيق. وإذا لم يستطع، يتوقف التطبيق ويخبرك.</li>
+        <li>في أول مرة ترسل فيها إلى جهاز اخترته من قائمة الهواتف القريبة، لا يملك التطبيق مفتاحاً سابقاً يقارن به. على شبكة لا تثق بها، امسح رمز <span lang="en" dir="ltr">QR</span> بدلاً من ذلك.</li>
+        <li>يُحفظ مفتاح جهازك في مساحة التطبيق الخاصة على أندرويد، وفي «سلسلة المفاتيح» (<span lang="en" dir="ltr">Keychain</span>) على آيفون.</li>
+      </ul>
+      <p>يستخدم التشفير طرقاً قياسية. لم يراجعه خبير أمن مستقل حتى الآن، ولا توجد طريقة تضمن أماناً كاملاً.</p>
+    </section>
+
+    <section>
+      <h2>8. مدة حفظ البيانات وطريقة حذفها</h2>
+      <p>يحتفظ التطبيق بالبيانات المذكورة في القسم 3 إلى أن تحذفها. الملفات غير المكتملة وحدها تُحذف دون تدخّل منك: يحذفها التطبيق بعد 7 أيام.</p>
+      <ul>
+        <li><b>عملية نقل واحدة.</b> في <span class="ui" lang="en" dir="ltr">History</span> اختر <span class="ui" lang="en" dir="ltr">Remove from history</span>. يحذف ذلك عملية النقل وقائمة ملفاتها وبصماتها. ولا يحذف الملفات التي استلمتها.</li>
+        <li><b>الملفات غير المكتملة.</b> في <span class="ui" lang="en" dir="ltr">Settings</span>، تحت <span class="ui" lang="en" dir="ltr">Incomplete transfers</span>، اختر <span class="ui" lang="en" dir="ltr">Delete them</span>.</li>
+        <li><b>كل شيء.</b> احذف التطبيق، أو على أندرويد امسح مساحة تخزين التطبيق من إعدادات الهاتف (التطبيقات ← <span lang="en" dir="ltr">Nawilni</span> ← التخزين). يحذف ذلك السجل، وقائمة الأجهزة، والإعدادات، ومعرّف التثبيت، ومفتاح الجهاز.</li>
+        <li><b>الملفات المستلمة.</b> هي ملكك. على أندرويد تبقى في <span class="ui" lang="en" dir="ltr">Download/Nawilni</span> بعد حذف التطبيق، إلى أن تحذفها بنفسك. وعلى آيفون توجد في مجلد التطبيق، فحذف التطبيق يحذفها معه. انقل الملفات التي تريد الاحتفاظ بها قبل أن تحذف التطبيق.</li>
+      </ul>
+      <p>على آيفون قد يُبقي النظام مفتاح الجهاز في «سلسلة المفاتيح» بعد حذف التطبيق. ويبقى المفتاح على جهازك.</p>
+      <p>لا يملك المطوّر أي نسخة من بياناتك. لذلك لا يوجد ما يستطيع أن يحذفه لك أو يرسله إليك.</p>
+    </section>
+
+    <section>
+      <h2>9. النسخ الاحتياطية</h2>
+      <ul>
+        <li><b>أندرويد.</b> بيانات التطبيق مستثناة من النسخ الاحتياطي في أندرويد، ومن النسخة التي ينشئها أندرويد عند الانتقال إلى هاتف جديد.</li>
+        <li><b>آيفون.</b> إذا كنت تستخدم النسخ الاحتياطي على <span lang="en" dir="ltr">iCloud</span> أو على كمبيوتر، فالنسخة تحتوي على سجل التطبيق وإعداداته والملفات المستلمة، كما في التطبيقات الأخرى. تتعامل <span lang="en" dir="ltr">Apple</span> مع هذه النسخ وفق سياسة الخصوصية الخاصة بها، ولا يستطيع المطوّر الوصول إليها. ومفتاح الجهاز لا يُنقل إلى جهاز آخر.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>10. <span lang="en" dir="ltr">Google Play</span> و <span lang="en" dir="ltr">App Store</span></h2>
+      <p>عندما تثبّت التطبيق، تتعامل <span lang="en" dir="ltr">Google</span> أو <span lang="en" dir="ltr">Apple</span> مع التنزيل وفق سياسة الخصوصية الخاصة بها. وإذا وافقت على جهازك على مشاركة الإحصاءات مع مطوّري التطبيقات، يعرض المتجر للمطوّر أرقاماً إجمالية، مثل عدد مرات التثبيت وعدد الأعطال. تأتي هذه الأرقام من <span lang="en" dir="ltr">Google</span> أو <span lang="en" dir="ltr">Apple</span> وليس من التطبيق، ولا تحدّد هويتك. ويمكنك إيقاف هذه المشاركة من إعدادات جهازك.</p>
+    </section>
+
+    <section>
+      <h2>11. الأطفال</h2>
+      <p>التطبيق غير موجّه إلى الأطفال دون 13 سنة. ولا يجمع أي بيانات شخصية من أي شخص، مهما كان عمره.</p>
+    </section>
+
+    <section>
+      <h2>12. حقوقك</h2>
+      <p>تمنحك قوانين الخصوصية في بلدان كثيرة الحق في أن تطّلع على بياناتك الشخصية التي تحتفظ بها أي جهة، وأن تصحّحها وتحذفها. المطوّر لا يحتفظ بأي بيانات شخصية عنك. كل ما يحفظه التطبيق موجود على جهازك أنت، والقسم 8 يشرح طريقة حذفه.</p>
+    </section>
+
+    <section>
+      <h2>13. تغيير هذه السياسة</h2>
+      <p>عندما تتغير هذه السياسة، يظهر النص الجديد على هذه الصفحة مع تاريخ جديد في أعلاها. وإذا أصبح إصدار لاحق من التطبيق يجمع أي بيانات، فستذكر هذه السياسة ذلك قبل نشر ذلك الإصدار.</p>
+    </section>
+
+    <section>
+      <h2>14. التواصل</h2>
+      <div class="contact">
+        <p><span lang="en" dir="ltr">Youssef Agagg</span><br><a href="mailto:youssefagagg@gmail.com" lang="en" dir="ltr">youssefagagg@gmail.com</a></p>
+      </div>
+    </section>
+  </article>
+
+</div>
+
+<script>
+  // Shows one language at a time. Without this script the page shows both.
+  (function () {
+    var root = document.documentElement;
+    var articles = { en: document.getElementById('en'), ar: document.getElementById('ar') };
+    var titles = { en: 'Privacy Policy – Nawilni', ar: 'سياسة الخصوصية – ناولني' };
+    var links = document.querySelectorAll('.langs a');
+
+    // The language in the address (#en, #ar) wins; otherwise the language of the browser.
+    function wanted() {
+      var hash = location.hash.slice(1);
+      if (articles[hash]) return hash;
+      var first = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+      return /^ar\b/i.test(first) ? 'ar' : 'en';
+    }
+
+    function show(lang) {
+      for (var key in articles) articles[key].hidden = key !== lang;
+      root.lang = lang;
+      root.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.title = titles[lang];
+      for (var i = 0; i < links.length; i++) {
+        if (links[i].getAttribute('data-lang') === lang) links[i].setAttribute('aria-current', 'true');
+        else links[i].removeAttribute('aria-current');
+      }
+    }
+
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function (event) {
+        event.preventDefault();          // switch in place, without a jump down the page
+        var lang = this.getAttribute('data-lang');
+        history.replaceState(null, '', '#' + lang);
+        show(lang);
+      });
+    }
+    window.addEventListener('hashchange', function () { show(wanted()); window.scrollTo(0, 0); });
+    show(wanted());
+  })();
+</script>
+</body>
+</html>
